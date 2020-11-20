@@ -48,7 +48,7 @@ function App() {
   );
 }
 ```
-6. Um outro detalhe é que, todas as vezes em que você foi adicionar um novo componente, você precisa colocar um sinal de ```+``` entre as conexões, exceto no último componente:
+6. Um outro detalhe é que, todas as vezes que você for adicionar um novo componente, você precisa colocar um sinal de ```+``` entre as conexões, com exceção do último componente:
 ```
 call('components/Navbar');
 
