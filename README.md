@@ -48,6 +48,19 @@ function App() {
   );
 }
 ```
+6. Um outro detalhe é que, todas as vezes em que você foi adicionar um novo componente, você precisa colocar um sinal de ```+``` entre as conexões, exceto no último componente:
+```
+call('components/Navbar');
+
+function App() {
+  return (
+     Navbar()+
+     Navbar()+
+     Navbar()+
+     Navbar()
+  );
+}
+```
 
 ### Adicionando estilos a um componente
 1. Para adicionarmos estilos aos nossos componentes, precisamos cria-los em formato de pastas:
