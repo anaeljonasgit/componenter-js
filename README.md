@@ -9,7 +9,7 @@ Para começar a utilizar a biblioteca, basta você fazer um ```git clone https:/
 2. Uma função ```function App() {  }``` com um ```return()``` dentro do seu ```index.js``` ou ```script.js``` principal.
 3. Agora é só usar e pronto.
 
-## Como usar
+# Como usar
 
 ### Criando um componente
 1. Crie uma pasta chamada ```components``` dentro da raiz do seu projeto.
@@ -83,27 +83,27 @@ function Navbar() {
 }
 ```
 
-### Componentes com lógica
+### Componentes de lógica
 Os componentes com lógica são um pouco diferentes dos componentes comuns do ```Componenter.js```. Veja abaixo o exemplo de um contador:
 ```
 function Counter() {
-	count = 0;
-
-	Add = () => {
-		count += 1;
-		Render('#Counter', Component());
-	}
-
-	Component = () => {
-		return `
-			<div id='Counter'>
-				<h1>${count}</h1>
-				<button onclick='Add()'>Add</button>
-			</div>
-		`;
-	}
-
-	return Component();
+   count = 0;
+   
+   Add = () => {
+      count = count + 1;
+      Render('#Counter', Component());
+   }
+   
+   Component = () => {
+      return `
+         <div id='Counter'>
+	    <h1>${count}</h1>
+	    <button onclick='Add()'>Add</button>
+	 </div>
+      `;
+   }
+   
+   return Component();
 }
 ```
 Perceba que o nosso componente precisa está dentro de uma outra função chamada ```Component()```. Fizemos isso para podermos atualizar o lado visual do nosso componente através da nossa outra função ```Render()```. Em componentes de lógica, precisamos sempre adicionar um ```id``` à div com o nome do nosso componente - só assim o ```Componenter.js``` irá identificar o componente em questão e atualizar o seu visual em tela toda vez que um algoritmo lógico do seu código for ativado dentro do componente.
